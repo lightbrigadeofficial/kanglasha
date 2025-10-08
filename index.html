@@ -1,0 +1,322 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="fj48ATWIWBdTymIHANc-XosXP6nbp6B0PFY0iqc1qBo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Kanglasha</title>
+    <link rel="stylesheet" href="frontend/css/styles.css">
+    <link rel="stylesheet" href="frontend/css/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="icon" type="image/png" href="backend/components/Favicon.png">
+    <link rel="apple-touch-icon" href="backend/components/Favicon.png">
+    <link rel="shortcut icon" href="backend/components/Favicon.png" type="image/png">
+    <link rel="preload" href="frontend/fonts/Tan-Pearl-Font/" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="frontend/fonts/Cutta-Font-Family/" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="frontend/fonts/Raglien-Font/" as="font" type="font/woff" crossorigin>
+    <meta name="description" content="Kanglasha – Affordable books and creative collections for passionate readers across India. Discover, share, and connect through books.">
+    <style>
+        .tooltip-unikorn {
+            /*visibility: hidden;*/
+            width: 240px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+            position: absolute;
+            z-index: 1;
+            font-size: 12px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+       /* .product-item:hover .tooltip-unikorn {
+            visibility: visible;
+            opacity: 1;
+        }*/
+
+        .product-item {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .product-details {
+            position: relative;
+        }
+        /* Existing styles retained */
+
+/* Responsive layout for mobile devices */
+@media (max-width: 700px) {
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .product-item {
+    width: calc(50% - 10px); /* 2 items per row with some space in between */
+    box-sizing: border-box;
+  }
+
+  .product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .product-details h4 {
+    font-size: 14px;
+    margin: 8px 0 4px;
+  }
+
+  .product-details p {
+    font-size: 12px;
+    color: #555;
+  }
+
+  .tooltip-unikorn {
+    font-size: 10px;
+    width: 180px;
+    z-index: 9999;
+  }
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="ribbon">🔥Join Free Community | <a href="https://nas.io/brigade-store.memberships.in" class="comm">
+            Click here</a></div>
+    <header><br><br>
+        <a href="index.html" class="logo"><img src="backend/components/Kanglasa.svg.png" alt="Kanglasha">KANGLASHA</a>
+        <ul class="navmenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="BOOKS.html">Shop</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <!--<li><a href="#">Docs</a></li>-->
+        </ul>
+        <div class="nav-icon">
+            <div class="search-container">
+                <input type="text" id="searchBar" placeholder="Search..." class="hidden">
+                <button id="searchButton"><i class='bx bx-search-alt-2'></i></button>
+            </div>
+            <a href="user.html"><i class='bx bx-user'></i></a>
+            <!--<a href="#"><i class='bx bx-cart'></i></a>-->
+        </div>
+        <div class="product-text">
+            <h5>^_~</h5>
+        </div>
+    </header>
+    <div class="side-label2" onclick="toggleSidePanel()">Menu</div>
+    <!-- The Side Panel -->
+    <div id="side-panel" class="side-panel">
+        <div class="close-btn" onclick="toggleSidePanel()">×</div>
+        <h2>Navigate</h2>
+        <ul>
+            <a href="about.html#whyus">
+                <li>Why Us?</li>
+            </a>
+            <a href="about.html#about">
+                <li>About Us</li>
+            </a>
+            <a href="help.html">
+                <li>FAQ& Help</li>
+            </a>
+            <a href="about.html#offer">
+                <li>Offers, Coupons& Sales</li>
+            </a>
+            <a href="sitemap.html">
+                <li>Site Map</li>
+            </a>
+            <a href="contact.html">
+                <li>Contact Us</li>
+            </a>
+            <!--<a href="contact.html#form">
+                <li>Request A Track For Your Order</li>
+            </a>-->
+            <a href="contact.html#form">
+                <li>Didn't Found What You're Looking For?</li>
+            </a>
+            <a href="privacypolicy.html">
+                <li>Privacy Policy</li>
+            </a>
+            <a href="t&c.html">
+                <li>Terms& Conditions</li>
+            </a>
+            <a href="https://vandam-sfsguwahati.github.io/sfsncc-digiportal.github.io/aboutthedev.html">
+                <li>About The Developer</li>
+            </a>
+            <a href="https://github.com/lightbrigadeofficial/Brigade-Store">
+                <li>Brigade Store Is Now Open-Source! You're 99.99% safe!</li>
+            </a>
+        </ul>
+    </div>
+    <section class="main-home"><br><br><br>
+        <!--<p class="location">Based in Guwahati, AS</p>-->
+        <div class="main-text">
+            <h5>Our Deals</h5>
+            <h1>Best Reads <br> The Right Price</h1>
+            <p>"Information Is Wealth"</p>
+
+            <a href="BOOKS.html" class="main-btn">Shop Now <i class='bx bx-right-arrow-alt'></i></a><br><br>
+            <button class="cssbuttons-io-button" id="downloadBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path fill="currentColor"
+                        d="M1 14.5a6.496 6.496 0 0 1 3.064-5.519 8.001 8.001 0 0 1 15.872 0 6.5 6.5 0 0 1-2.936 12L7 21c-3.356-.274-6-3.078-6-6.5zm15.848 4.487a4.5 4.5 0 0 0 2.03-8.309l-.807-.503-.12-.942a6.001 6.001 0 0 0-11.903 0l-.12.942-.805.503a4.5 4.5 0 0 0 2.029 8.309l.173.013h9.35l.173-.013zM13 12h3l-4 5-4-5h3V8h2v4z">
+                    </path>
+                </svg>
+                <span>The Downlaod Is Ceased :< </span>
+            </button>
+
+
+            <br> <i>*The app has been ceased due to technical miss-alignment. Will be available momentarily.</i>
+        </div>
+        <div class="down-arrow">
+            <a href="#ep" class="down"><i class='bx bx-down-arrow-alt'></i></a>
+        </div>
+        <div id="clock"></div>
+    </section><br><br><br>
+
+    <!--TRENDING SECTION-->
+    <section class="product-list">
+        <section class="SelfHelp" id="ep"></section>
+        <div class="center-text">
+            <h2>Vandam's <span>Curated Pick</span></h2>
+        </div>
+        <div class="product-container">
+
+            <div class="product-item">
+                <a href="SH014.html">
+                    <img src="Cantt-Hurt-Me-By-David-Goggins.jpg" alt="Cantt-Hurt-Me-By-David-Goggins">
+                    <div class="product-details">
+                        <h4>Can't Hurt Me By David Goggins</h4>
+                        <p>182 INR</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-item">
+                <a href="SH002.html">
+                    <img src="The-Psychology-Of-Money-By-Morgan-Housel.jpg"
+                        alt="The-Psychology-Of-Money-By-Morgan-Housel">
+                    <div class="product-details">
+                        <h4>The Psychology Of Money By Morgan Housel</h4>
+                        <p>140 INR</p>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="product-item">
+                <a href="SH006.html">
+                    <img src="How-to-win-friends-and-influence-people.jpeg"
+                        alt="How-to-win-friends-and-influence-people">
+                    <div class="product-details">
+                        <h4>How To Win Friends And Influence People By Dale Carnegie</h4>
+                        <p>109 INR</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-item">
+                <a href="SH007.html">
+                    <img src="The-Subtle-Art-Of-Not-Giving-A-Fuck-By-Mark-Manson.jpg"
+                        alt="The-Subtle-Art-Of-Not-Giving-A-Fuck-By-Mark-Manson">
+                    <div class="product-details">
+                        <h4>The Subtle Art Of Not Giving A Fuck By Mark Manson</h4>
+                        <p>121 INR</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-item">
+                <a href="SH016.html">
+                    <img src="The-Concise-48-Laws-Of-Power-By-Robert-Greene.jpeg" alt="The-Concise-48-Laws-Of-Power-By-Robert-Greene">
+                    <div class="product-details">
+                        <h4>The Concise 48 Laws Of Power By Robert Greene</h4>
+                        <p>166 INR</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-item">
+                <a href="SH003.html">
+                    <img src="Think-And-Grow-Rich-By-Napoleon-Hill.jpg" alt="Think-And-Grow-Rich-By-Napoleon-Hill">
+                    <div class="product-details">
+                        <h4>Think And Grow Rich By Napoleon Hill</h4>
+                        <p>109 INR</p>
+                    </div>
+                </a>
+            </div>
+        
+        
+        
+        
+        
+        </div>
+    </section>
+
+
+    <!--FOOTER SECTION-->
+    <section class="contact" id="contact">
+        <div class="contact-info">
+            <div class="first-info">
+                <img src="Logo.png" alt="Brigade Store Logo">
+                <p>Noonmati, Guwahati, <br>Assam - 781020</p>
+                <p>+91 88226 75694</p>
+                <p>brigadestorevandam.reply@gmail.com</p>
+                <div class="social-icon">
+                    <a href="https://www.instagram.com/vandam.io/"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://wa.link/21mryu"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="mailto:brigadestorevandam.reply@gmail.com"><i class='bx bxl-gmail'></i></a>
+                </div>
+            </div>
+
+            <div class="second-info">
+                <h4>Support</h4>
+                <p><a href="contact.html">Contact Us</a></p>
+                <p><a href="about.html">About Page</a></p>
+                <p><a href="privacypolicy.html">Privacy</a></p>
+            </div>
+
+            <div class="third-info">
+                <h4>Miscellaneous</h4>
+                <p><a href="https://vandam-sfsguwahati.github.io/sfsncc-digiportal.github.io/aboutthedev.html">About The
+                        Developer</a></p>
+                <p><a href="sitemap.html">Site Map</a></p>
+            </div>
+        </div>
+    </section>
+
+    <div class="end-text">
+        <p>©Brigade Store 2025. All Rights Reserved.</p>
+    </div>
+
+    <script src="frontend/javascript/script.js"></script>
+    <script type="module">
+        import { inject } from "@vercel/analytics"
+    </script>
+    <script>
+        window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
+
+    <!--<script>
+        document.getElementById("downloadBtn").addEventListener("click", function() {
+            var link = document.createElement("a");
+            link.href = "NULL";  // Replace with actual APK URL
+            link.download = "BrigadeStore_Official.apk";  // Sets the filename
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+        </script>-->
+
+</body>
+
+</html>

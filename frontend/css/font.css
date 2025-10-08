@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'tan-pearl'; 
+  src: url('../fonts/Tan-Pearl-Font/tan-pearl.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'cutta-medium'; 
+  src: url('../fonts/Cutta-Font-Family/cutta-medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'cutta-bold';
+  src: url('../fonts/Cutta-Font-Family/cutta-black.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'raglien';
+  src: url('../fonts/Raglien-Font/raglien.woff') format('woff');
+}

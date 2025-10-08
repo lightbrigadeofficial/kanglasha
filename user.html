@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charcet="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Volksführer</title>
+    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="icon" type="image/x-icon" href="pfp.jpeg">
+</head>
+
+<body>    
+  <header class="header">
+    <a href="index.html">Back To Home</a>
+    <a href="BOOKS.html">Shop</a>
+  </header>    
+<div class="terminal-loader">
+    <div class="terminal-header">
+      <div class="terminal-title">Status</div>
+      <div class="terminal-controls">
+        <div class="control close"></div>
+        <div class="control minimize"></div>
+        <div class="control maximize"></div>
+      </div>
+    </div>
+    <div class="text">Loading...</div>
+  </div>
+  
+  
+    <section>
+        
+  <div class="profile">
+    <img src="pfp.jpeg" alt="Profile Picture" class="pfp">
+    <center>M VANDAM SINGHA</center>
+    <p class="info">
+      I is - a coder by passion, a reader by heart.
+      I like the hum of midnight thoughts, the thrill of untold stories, and the quiet power of words.
+      I am up for building dreams, breaking barriers, and chasing the unknown.
+      From pages that whisper wisdom to terminals that blink with possibilities — I belong somewhere in
+      between.
+    </p>
+  </div>
+  </section>
+
+
+  <script>
+    window.addEventListener("load", function () {
+      setTimeout(() => {
+        // Smooth fade-out for loader
+        const loader = document.querySelector(".terminal-loader");
+        if (loader) {
+          loader.style.transition = "opacity 1s ease";
+          loader.style.opacity = "0";
+          setTimeout(() => {
+            loader.style.display = "none";
+          }, 1000); // After fade-out
+        }
+    
+        // Show profile and Spotify card with fade-in
+        const profile = document.querySelector(".profile");
+        const spotifyCard = document.querySelector(".spotify-card");
+        const muteBtn = document.querySelector(".mute-btn");
+        const retroMsg = document.getElementById("retro-msg");
+    
+        if (profile) profile.style.display = "block";
+        if (spotifyCard) spotifyCard.style.display = "flex";
+        if (muteBtn) muteBtn.style.display = "block";
+        if (retroMsg) retroMsg.style.display = "block";
+    
+      }, 3500);
+    });
+    </script>
+    
+</body>
+
+</html>

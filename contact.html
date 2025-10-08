@@ -1,0 +1,313 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Brigade Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="icon" type="image/x-icon" href="Logo.png">
+    <style>
+        .product-list {
+            padding: 5% 10%;
+        }
+
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            /* 6 items per row */
+            gap: 15px;
+            /* Space between items */
+        }
+
+        .product-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .product-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px #00000033;
+        }
+
+        .product-details h4 {
+            color: #111;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .product-details p {
+            color: #555;
+            font-size: 14px;
+            margin: 0;
+        }
+
+
+        .cola-container {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+/* Tooltip Styling */
+.cola {
+  position: absolute;
+  top: -180px; /* Adjusted to move higher */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  border-radius: 15px;
+  background-color: #1E1E1E; /* Dark background with slight transparency */
+  color: white;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3),
+    -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border: #E6683C;
+}
+
+/* Profile Section */
+.boajsf-profile {
+  background: #111;
+  border-radius: 10px 15px;
+  padding: 10px;
+  border: 1px solid #E6683C;
+}
+
+/* Profile Image */
+.boajsf-img {
+  width: 50px; /* Profile size */
+  height: 50px;
+  border-radius: 50%; /* Make it circular */
+  overflow: hidden; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+}
+
+.boajsf-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image fills without distortion */
+}
+
+/* Tooltip Hover */
+.cola-container:hover .cola {
+  top: -235px; /* Higher on hover */
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Button Square and Size */
+.boajsf-icon {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block; 
+  position: relative;
+  width: 55px; 
+  height: 55px; 
+}
+
+/* Button Layers */
+.boajsf-layer {
+  width: 55px;
+  height: 55px;
+  transition: transform 0.3s;
+}
+
+/* Button Hover Effect */
+.boajsf-icon:hover .boajsf-layer {
+  transform: rotate(-35deg) skew(20deg);
+}
+
+.boajsf-layer span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #e6683c;
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+
+/* Layer Effect */
+.boajsf-icon:hover .boajsf-layer span:nth-child(1) {
+  opacity: 0.2;
+}
+.boajsf-icon:hover .boajsf-layer span:nth-child(2) {
+  opacity: 0.4;
+  transform: translate(5px, -5px);
+}
+.boajsf-icon:hover .boajsf-layer span:nth-child(3) {
+  opacity: 0.6;
+  transform: translate(10px, -10px);
+}
+.boajsf-icon:hover .boajsf-layer span:nth-child(4) {
+  opacity: 0.8;
+  transform: translate(15px, -15px);
+}
+.boajsf-icon:hover .boajsf-layer span:nth-child(5) {
+  opacity: 1;
+  transform: translate(20px, -20px);
+}
+
+/* Text Animation */
+.boajsf-icon .boajsf-text {
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  opacity: 0;
+  font-weight: 500;
+  transform: translateX(-50%);
+  transition: bottom 0.3s ease, opacity 0.3s ease;
+}
+
+.boajsf-icon:hover .boajsf-text {
+  bottom: -35px;
+  opacity: 1;
+}
+
+/* Instagram SVG */
+.insta-weirdSVG {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="index.html" class="logo"><img src="Logo.png" alt="Brigade Store"></a>
+        <ul class="navmenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="BOOKS.html">Shop</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+        <div class="nav-icon">
+            <div class="search-container">
+                <input type="text" id="searchBar" placeholder="Search..." class="hidden">
+                <button id="searchButton"><i class='bx bx-search-alt-2'></i></button>
+            </div>
+            <a href="user.html"><i class='bx bx-user'></i></a>
+            <!--<a href="#"><i class='bx bx-cart'></i></a>-->
+        </div>
+        <div class="product-text">
+            <h5>^_~</h5>
+        </div>
+    </header>
+    <br><br><br><br><br><br><br><br>
+    <center>
+    <H2>Contact Us (Even For Urgent Queries or Personal Approach)</H2><br>
+        <div class="first-info">
+            <p class="Nerd">Noonmati, Guwahati, <br>Assam - 781020</p><br>
+            <p class="Nerd">Phone: +91 88226 75694</p><br>
+            <p class="Nerd">Email:  brigadestorevandam.reply@gmail.com</p><br>
+            <!--<a href="https://www.instagram.com/vandam.io/" class="Nerd"><p class="Nerd">Instagram: @vandam.io</p></a><br>-->
+        </div>
+        <div class="cola-container">
+            <div class="cola">
+              <div class="boajsf-profile">
+                <div class="boajsf-user"><br>
+                  <div class="boajsf-img"><img src="ig.jpeg"></div><br>
+                  <div class="boajsf-details">
+                    <div class="boajsf-name">VandamDerFührer</div>
+                    <div class="boajsf-username">@vandam.io</div><br>
+                  </div>
+                </div>
+                <div class="boajsf-about">25+ Followers</div><br>
+              </div>
+            </div>
+            <div class="text-uyre">
+              <a class="boajsf-icon" href="https://www.instagram.com/vandam.io/">
+                <div class="boajsf-layer">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span class="insta-weirdSVG">
+                    <svg
+                      fill="white"
+                      class="svgBoajsf"
+                      viewBox="0 0 448 512"
+                      height="1.5em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="boajsf-text"></div>
+              </a>
+            </div>
+          </div>
+        <br>
+        <h2>For Complaints Or Returns:</h2><br>
+<form action="https://formspree.io/f/xdkazwrb" class="form" id="form" method="POST">
+    <p>
+        We are intimately sorry T-T<span>But we'll do our 100% to keep you happy! 💪</span>
+    </p>
+    <input type="text" placeholder="Your Full Name" name="name" required><br>
+    <input type="email" placeholder="Your Email" name="name" required><br>
+    <input type="number" placeholder="Your Phone Number" name="phonenumber" required><br>
+    <input placeholder="Your Order Id If Returns*" name="name"><br>
+    <input type="text" placeholder="Subject Of Complaint" name="subject" required><br>
+    <input type="text" placeholder="Your Complain Here" name="complaint" required><br>
+    <select id="contactopt" class="ot" name="contactopt" required><br>
+        <option value="">How Do You Want To Be Contacted?</option>
+        <option>Call Assistance (Please mention time/date in your complain)</option>
+        <option>SMS and Whatsapp</option>
+        <option>Email</option>
+    </select>
+    <button class="oauthButton">
+                    Slap The Complaint
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 17 5-5-5-5"></path><path d="m13 17 5-5-5-5"></path></svg>
+                </button>
+</form>
+    </center>
+
+    <br><br>
+    <div class="end-text">
+        <p>©Brigade Store 2025. All Rights Reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
