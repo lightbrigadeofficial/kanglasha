@@ -434,7 +434,7 @@ section {
 }
 
 .search-container button i {
-    font-size: 20px;
+    font-size: 35px;
     color: #333;
 }
 
@@ -736,6 +736,10 @@ input[type="radio"] {
     body {
         font-size: 18px;
     }
+    .search-container button i {
+    font-size: 35px;
+    color: #333;
+}
 }
 
 /* For smaller screens (phones, small tablets) */
@@ -751,6 +755,10 @@ input[type="radio"] {
     }
 }
 
+    .search-container button i {
+    font-size: 35px;
+    color: #333;
+}
 .float2 {
     position: fixed;
     /* Fixed positioning to keep it in the same place on scroll */
@@ -1595,12 +1603,22 @@ input[type="radio"] {
         padding: 8px 16px; /* Adjust padding for medium screens */
         font-size: 20px; /* Slightly smaller font */
     }
+
+    .search-container button i {
+    font-size: 35px;
+    color: #333;
+}
 }
 
 @media (max-width: 992px) {
     .product-container {
         grid-template-columns: repeat(3, 1fr); /* 3 items per row */
     }
+
+    .search-container button i {
+    font-size: 35px;
+    color: #333;
+}
 
     header {
         padding: 15px 5%; /* Reduce padding */
@@ -1651,6 +1669,11 @@ input[type="radio"] {
         grid-template-columns: 1fr; /* 1 item per row */
         padding: 5%; /* Reduce padding for small screens */
     }
+
+    .search-container button i {
+    font-size: 35px;
+    color: #333;
+}
 
     header {
         padding: 10px 5%;

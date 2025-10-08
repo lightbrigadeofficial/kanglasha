@@ -419,7 +419,7 @@ section {
 }
 
 .search-container button i {
-    font-size: 20px;
+    font-size: 35px;
     color: #333;
 }
 
@@ -1586,6 +1586,11 @@ input[type="radio"] {
         height: auto;
     }
 
+    .search-container button i {
+    font-size: 35px;
+    color: #333;
+}
+
     .product-details h4 {
         font-size: 14px; /* Adjust font size */
     }
@@ -1599,6 +1604,11 @@ input[type="radio"] {
     .product-container {
         grid-template-columns: repeat(2, 1fr); /* 2 items per row */
     }
+
+    .search-container button i {
+    font-size: 35px;
+    color: #333;
+}
 
     header {
         padding: 15px 5%; /* Maintain header padding */
@@ -1643,6 +1653,11 @@ input[type="radio"] {
     .product-container {
         grid-template-columns: repeat(2, 1fr); /* 2 items per row */
     }
+
+    .search-container button i {
+    font-size: 35px;
+    color: #333;
+}
 
     body {
         padding-top: 90px; /* Adjust for header */
@@ -1692,6 +1707,11 @@ input[type="radio"] {
         grid-template-columns: repeat(2, 1fr); /* 2 items per row */
         padding: 5%; /* Reduce padding for small screens */
     }
+
+    .search-container button i {
+    font-size: 35px;
+    color: #333;
+}
 
     header {
         padding: 10px 5%;
