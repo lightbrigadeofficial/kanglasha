@@ -8,13 +8,12 @@
 
 body {
     background-color: #f9f9f9;
-    padding-top: 80px; /* Adjust padding for fixed header */
     color: #2c2c2c;
 }
 
 /* Header Styles */
 header {
-    position: fixed;
+    position: auto;
     width: 100%;
     top: 0;
     right: 0;
@@ -28,8 +27,7 @@ header {
 }
 
 .logo img {
-    max-width: 120px;
-    height: auto;
+    height: 70px;
 }
 
 .navmenu {
@@ -45,6 +43,7 @@ header {
     font-weight: 400;
     transition: all 0.42s ease;
     text-decoration: none;
+    font-weight: 900;
 }
 
 .navmenu a:hover {
