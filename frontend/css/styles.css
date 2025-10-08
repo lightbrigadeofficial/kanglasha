@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 5%;
     right: 0;
@@ -33,7 +33,7 @@ header {
 
 .logo {
     font-family: 'tan-pearl', sans-serif;
-    font-size: 14px;
+    font-size: 24px;
     font-weight: 700;
     color: #111;
     text-transform: uppercase;
@@ -92,7 +92,7 @@ section {
 .main-home {
     width: 100%;
     height: 100vh;
-    background-image: url(imagebg.png);
+    background-image: url(https://res.cloudinary.com/dmesnfesj/image/upload/v1759908317/imagebg_zbr8tk.png);
     background-position: center;
     background-size: cover;
     display: grid;
@@ -104,12 +104,14 @@ section {
     color: #ee1c47;
     font-size: 16px;
     text-transform: capitalize;
-    font-weight: 500;
+    font-weight: 900;
+    font-family: cutta-bold, sans-serif;
 }
 
 .main-text h1 {
     color: #000;
     font-size: 65px;
+    font-family: 'tan-pearl', sans-serif;
     text-transform: capitalize;
     line-height: 1.1;
     font-weight: 600;
@@ -117,10 +119,11 @@ section {
 }
 
 .main-text p {
-    color: #333c56;
-    font-size: 20px;
-    font-style: italic;
+    color: orangered;
+    padding-top: 5px;
+    font-size: 40px;
     margin-bottom: 20px;
+    font-family: 'raglien';
 }
 
 .main-btn {
@@ -167,11 +170,11 @@ section {
     transition: all .42s ease;
 }
 
-header.sticky {
+/* header.sticky {
     background: #fff;
     padding: 20px 10%;
     box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
-}
+} */
 
 /*TRENDING SECTION*/
 .center-text h2 {
@@ -1755,7 +1758,7 @@ input[type="radio"] {
     font-size: 24px;
     font-weight: bold;
     font-family: 'Bebas Neue' , sans-serif;
-    position: fixed;
+    position: absolute;
     top: 35px;
     right: 20px;
     background: transparent;
