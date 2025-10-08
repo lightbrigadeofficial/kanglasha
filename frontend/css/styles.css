@@ -49,7 +49,7 @@ header {
 
 .navmenu a {
     color: #2c2c2c;
-    font-size: 16px;
+    font-size: 20px;
     text-transform: capitalize;
     padding: 10px 20px;
     font-weight: 400;
@@ -1593,7 +1593,7 @@ input[type="radio"] {
 
     .navmenu a {
         padding: 8px 16px; /* Adjust padding for medium screens */
-        font-size: 15px; /* Slightly smaller font */
+        font-size: 20px; /* Slightly smaller font */
     }
 }
 
@@ -1612,7 +1612,7 @@ input[type="radio"] {
 
     .navmenu a {
         padding: 6px 12px; /* Reduce padding for compact fit */
-        font-size: 14px; /* Smaller font size */
+        font-size: 20px; /* Smaller font size */
     }
 }
 
@@ -1635,7 +1635,7 @@ input[type="radio"] {
 
     .navmenu a {
         padding: 5px 10px; /* Tighter padding */
-        font-size: 13px;
+        font-size: 18px;
     }
 
     .nav-icon i {
@@ -1662,7 +1662,7 @@ input[type="radio"] {
 
     .navmenu a {
         padding: 6px 10px;
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .nav-icon i {

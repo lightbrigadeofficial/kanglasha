@@ -1578,7 +1578,7 @@ input[type="radio"] {
 
     .navmenu a {
         padding: 6px 12px; /* Adjust padding for medium screens */
-        font-size: 14px; /* Smaller font */
+        font-size: 20px; /* Smaller font */
     }
 
     .product-item img {
@@ -1596,47 +1596,6 @@ input[type="radio"] {
 }
 
 @media (max-width: 992px) {
-    .products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    /* Adjust minmax for desired item size */
-    gap: 1.5rem;
-    /* Reduce gap between items for compactness */
-    justify-items: center;
-    /* Center align items within their grid cells */
-}
-
-.row img {
-    width: 100%;
-    max-width: 190px;
-    /* Adjust width for smaller images */
-    height: 200px;
-    /* Set a consistent height */
-    object-fit: cover;
-    /* Ensures the image scales proportionally without distortion */
-    border-radius: 5px;
-    /* Optional: Adds rounded corners */
-    transition: all 0.4s ease;
-}
-
-.row img:hover {
-    transform: scale(1.05);
-    /* Subtle hover effect */
-}
-
-.product-text h5 {
-    position: absolute;
-    top: 13px;
-    left: 13px;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 500;
-    text-transform: uppercase;
-    background-color: #27b737;
-    padding: 3px 10px;
-    border-radius: 2px;
-}
-
     .product-container {
         grid-template-columns: repeat(2, 1fr); /* 2 items per row */
     }
@@ -1657,7 +1616,7 @@ input[type="radio"] {
 
     .navmenu a {
         padding: 5px 10px; /* Adjust padding for compact fit */
-        font-size: 13px; /* Smaller font size */
+        font-size: 20px; /* Smaller font size */
     }
 
     .nav-icon {
@@ -1703,7 +1662,7 @@ input[type="radio"] {
 
     .navmenu a {
         padding: 6px 8px;
-        font-size: 12px;
+        font-size: 18px;
     }
 
     .nav-icon {
@@ -1752,7 +1711,7 @@ input[type="radio"] {
 
     .navmenu a {
         padding: 4px 6px;
-        font-size: 11px;
+        font-size: 16px;
     }
 
     .nav-icon {
