@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    position: absolute;
+     position: auto;
     width: 100%;
     top: 0;
     right: 0;
@@ -27,7 +27,8 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px 10%;
-    background-color: #fff; /* Ensure background covers content */
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
@@ -44,7 +45,7 @@ header {
     font-size: 20px;
     text-transform: capitalize;
     padding: 10px 20px;
-    font-weight: 400;
+    font-weight: 900;
     transition: all .42s ease;
 }
 
